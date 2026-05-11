@@ -886,12 +886,12 @@ async function genPDF(){
       // ── 유형 해석 ────────────────────────────────────
       ctx.fillStyle='#F7F7FF';rr(ctx,ML,y+p(35),CW,aniH+p(70),p(3));ctx.fill();
       ctx.font=`700 ${pf(8)}px 'Noto Sans KR',sans-serif`;ctx.fillStyle='#545DAD';ctx.textAlign='left';ctx.textBaseline='alphabetic';
-      ctx.fillText('💡 유형 해석',ML+p(10),y+p(45));y+=p(22);
+      ctx.fillText(r.rt,ML+p(10),y+p(45));y+=p(22);
       ctx.font=`400 ${pf(7)}px 'Noto Sans KR',sans-serif`;ctx.fillStyle='#374151';
       const dlLines=wrap(ctx,ti.description,CW-p(20));
       dlLines.forEach((l,i)=>ctx.fillText(l,ML+p(10),y+(i * p(8))+p(33)));
       ctx.font=`700 ${pf(8)}px 'Noto Sans KR',sans-serif`;ctx.fillStyle='#545DAD';ctx.textAlign='left';ctx.textBaseline='alphabetic';
-      ctx.fillText('💡 상세 유형 해석',ML+p(10),y+p(75));y+=p(22);
+      ctx.fillText(r.rrt,ML+p(10),y+p(75));y+=p(22);
       ctx.font=`400 ${pf(7)}px 'Noto Sans KR',sans-serif`;ctx.fillStyle='#374151';
       const dlLines2=wrap(ctx,si.description,CW-p(20));
       dlLines2.forEach((l,i)=>ctx.fillText(l,ML+p(10),y+(i * p(8))+p(65)));
